@@ -440,13 +440,13 @@
 .max-w-474 {
     max-width: 474px;
 }
- 
+
 
 .pt-6 {
     padding-top: 6px;
 }
 
- 
+
 .pt-14 {
     padding-top: 14px;
 }
@@ -495,6 +495,87 @@
     gap: 40px;
 }
 
+.line_2 {
+    background: var(--white);
+    opacity: 70%;
+    height: 23px;
+    width: 1.6px;
+}
+/* back to top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+    transition: all 400ms linear;
+}
+ 
+ 
+.link:hover {
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0px 0px 20px 0px var(--orange);
+}
+
+/*===================*/
+/* PULSE GROW
+/*===================*/
+
+@-webkit-keyframes pulse-grow-on-hover {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulse-grow-on-hover {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.pulse-grow-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.pulse-grow-on-hover:hover,
+.pulse-grow-on-hover:focus,
+.pulse-grow-on-hover:active {
+    -webkit-animation-name: pulse-grow-on-hover;
+    animation-name: pulse-grow-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1330px) {
     .next_btn {
         top: 70.5%;
@@ -503,15 +584,17 @@
 }
 
 @media (min-width: 992px) {
-    
-.max-w-362 {
-    max-width: 362px;
-}
-.max-w-494 {
-    max-width: 494px;
-}
+
+    .max-w-362 {
+        max-width: 362px;
+    }
+
+    .max-w-494 {
+        max-width: 494px;
+    }
 
 }
+
 @media (max-width: 992px) {
     .overflow_scroll {
         overflow-x: scroll;
@@ -536,16 +619,20 @@
     .pt-200 {
         padding-top: 100px;
     }
-    .pt-199{
+
+    .pt-199 {
         padding-top: 100px;
     }
-    .pb-122{
+
+    .pb-122 {
         padding-bottom: 60px;
     }
-    .pt-239{
+
+    .pt-239 {
         padding-top: 150px;
     }
-    .pt-149{
+
+    .pt-149 {
         padding-top: 70px;
     }
 }
@@ -557,146 +644,154 @@
 
 
 
-    @media (max-width: 767.9px) {
-        .mobile_view {
-            position: fixed;
-            height: 100vh;
-            width: 100%;
-            top: 0;
-            left: -100%;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: all 400ms linear;
-            background-color: black;
-            z-index: 4;
-        }
-
-        .menu {
-            z-index: 50;
-        }
-
-        .overflow_hidden {
-            overflow: hidden;
-        }
-
-        .menu span:nth-child(1) {
-            height: 4px;
-            width: 35px;
-            background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
-
-            display: block;
-            border-radius: 30px;
-        }
-
-        .menu span:nth-child(2) {
-            height: 4px;
-            width: 35px;
-            background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
-
-            display: block;
-            border-radius: 30px;
-        }
-
-        .menu span:nth-child(3) {
-            height: 4px;
-            width: 35px;
-            background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
-
-            display: block;
-            border-radius: 30px;
-        }
-
-        .menu span {
-            transition: all 400ms linear;
-        }
-
-        .cross span:nth-child(1) {
-            transform: rotate(42deg) translateY(16px);
-            transition: 300ms linear;
-        }
-
-        .cross span:nth-child(2) {
-            transform: translateX(-100%);
-            opacity: 0;
-            transition: 10ms linear;
-        }
-
-        .cross span:nth-child(3) {
-            transform: rotate(-43deg) translateY(-15px);
-            transition: 300ms linear;
-        }
-
-        .right {
-            left: 0;
-        }
-
-        .flex-col {
-            flex-direction: column;
-        }
-
-        .gap-32 {
-            gap: 26px;
-        }
-
-        .pt-78 {
-            padding-top: 60px;
-        }
-
-        .hover_media {
-            top: 255px;
-            left: -100px;
-        }
-
-        .pt-149 {
-            padding-top: 30px;
-        }
-
-        .mt-50 {
-            margin-top: 30px;
-        }
-
-        .pt-239 {
-            padding-top: 30px;
-        }
-
-        .pt-88 {
-            padding-top: 30px;
-        }
-
-        .pt-220 {
-            padding-top: 30px;
-        }
-
-        .pt-208 {
-            padding-top: 30px;
-        }
-
-        .pt-50 {
-            padding-top: 30px;
-        }
-
-        .pt-200 {
-            padding-top: 40px;
-        }
-        .max-w-386{
-            max-width: 300px;
-        }
-        .pt-199{
-            padding-top: 30px;
-        }
-        .pt-73{
-            padding-top: 30px;
-        }
+@media (max-width: 767.9px) {
+    .mobile_view {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 400ms linear;
+        background-color: black;
+        z-index: 4;
     }
 
+    .menu {
+        z-index: 50;
+    }
 
-    @media (max-width: 575px) {
-        .hover_media {
-            backdrop-filter: blur(90px);
-            background: var(--bg-color);
-        }
-        .max-w-386{
-            max-width: 250px;
-        }
-       }
+    .overflow_hidden {
+        overflow: hidden;
+    }
+
+    .menu span:nth-child(1) {
+        height: 4px;
+        width: 35px;
+        background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
+
+        display: block;
+        border-radius: 30px;
+    }
+
+    .menu span:nth-child(2) {
+        height: 4px;
+        width: 35px;
+        background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
+
+        display: block;
+        border-radius: 30px;
+    }
+
+    .menu span:nth-child(3) {
+        height: 4px;
+        width: 35px;
+        background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
+
+        display: block;
+        border-radius: 30px;
+    }
+
+    .menu span {
+        transition: all 400ms linear;
+    }
+
+    .cross span:nth-child(1) {
+        transform: rotate(42deg) translateY(16px);
+        transition: 300ms linear;
+    }
+
+    .cross span:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: 10ms linear;
+    }
+
+    .cross span:nth-child(3) {
+        transform: rotate(-43deg) translateY(-15px);
+        transition: 300ms linear;
+    }
+
+    .right {
+        left: 0;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+
+    .gap-32 {
+        gap: 26px;
+    }
+
+    .pt-78 {
+        padding-top: 60px;
+    }
+
+    .hover_media {
+        top: 255px;
+        left: -100px;
+    }
+
+    .pt-149 {
+        padding-top: 30px;
+    }
+
+    .mt-50 {
+        margin-top: 30px;
+    }
+
+    .pt-239 {
+        padding-top: 30px;
+    }
+
+    .pt-88 {
+        padding-top: 30px;
+    }
+
+    .pt-220 {
+        padding-top: 30px;
+    }
+
+    .pt-208 {
+        padding-top: 30px;
+    }
+
+    .pt-50 {
+        padding-top: 30px;
+    }
+
+    .pt-200 {
+        padding-top: 40px;
+    }
+
+    .max-w-386 {
+        max-width: 300px;
+    }
+
+    .pt-199 {
+        padding-top: 30px;
+    }
+
+    .pt-73 {
+        padding-top: 30px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .hover_media {
+        backdrop-filter: blur(90px);
+        background: var(--bg-color);
+    }
+
+    .max-w-386 {
+        max-width: 250px;
+    }
+
+    .pt__20 {
+        padding-top: 20px;
+    }
+}
