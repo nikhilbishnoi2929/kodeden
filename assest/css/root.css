@@ -225,7 +225,7 @@
         --fs-2xl: 22px;
         --fs-3xl: 30px;
         --fs-4xl: 36px;
-        --fs-5xl: 50px;
+        --fs-5xl: 45px;
     
         
         /* line-height */
@@ -240,7 +240,7 @@
         --line-36: 36px;
         --line-41: 41px;
         --line-47: 47px;
-        --line-68: 68px;
+        --line-68: 60px;
         --line-72: 72px;
     }    
 }
