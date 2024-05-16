@@ -245,13 +245,13 @@
 }
 
 .card_2 {
-    top: 0;
-    right: 0;
+    top: 0.5px;
+    right: 1px;
 }
 
 .card_3 {
-    top: 16px;
-    right: 0;
+    top: 6px;
+    right: 3px;
 
 }
 
@@ -749,12 +749,14 @@
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+    cursor: pointer;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
+    cursor: pointer;
   }
    
   /* Handle */
@@ -767,6 +769,7 @@
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(146.43deg,  #FF6B0A 1.77%,#FF2801  62.74%);
+    cursor: pointer;
 
   }
   
