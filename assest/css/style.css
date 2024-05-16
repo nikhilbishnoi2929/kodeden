@@ -58,7 +58,7 @@
 }
 
 .hover_text:hover {
-    background: #FF2801;
+    background: var(--orange);
     background: linear-gradient(to bottom right, #FF2801 7%, #FF6B0A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -67,7 +67,7 @@
 }
 
 .hover_text_2 {
-    background: #FF2801;
+    background: var(--orange);
     background: linear-gradient(to bottom right, #FF2801 7%, #FF6B0A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -539,7 +539,7 @@
 
 .link:hover {
     text-decoration: none;
-    color: #000;
+    color: var(--bg-color);
     box-shadow: 0px 0px 20px 0px var(--orange);
 }
 
@@ -594,7 +594,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
