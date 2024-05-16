@@ -773,7 +773,10 @@
 
   }
   
-
+  ul li::marker {
+    font-size: 0.5em;
+  }
+  
 @media (max-width: 1330px) {
 
     .arrow_2 {
